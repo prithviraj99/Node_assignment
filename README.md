@@ -15,3 +15,10 @@ assignment_asyncforEach.js
 
   This js file uses async.forEachSeries for making async requests synchronous by running one at a time.
   Concurrency=1.
+
+-------------------------------------
+promises_qmap.js(without using async)
+-------------------------------------
+
+ This js file uses Q promise module instead of callbacks for running 5 async requests in parallel at a time.
+ Concurrency=5.
