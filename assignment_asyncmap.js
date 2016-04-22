@@ -32,7 +32,7 @@ async.mapLimit(URLs, 5, function(url, callback) {
         // processing all results in the array here
         for (var i = 0; i < results.length; i++) {
             // writing them to output.csv file
-            fs.writeFile('output.csv', results[i], function(err){
+            fs.appendFile('output.csv', results[i], function(err){
               if(err){
                 console.log(err);
               }

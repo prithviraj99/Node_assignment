@@ -23,7 +23,7 @@ async.forEachSeries(URLs, function(url, callback) {
               str += text+","+url+"\n";
             }
           });
-          fs.writeFile('output1.csv', str, function(err){
+          fs.appendFile('output1.csv', str, function(err){
             // writing them to output1.csv file
             if(err){
               console.log(err);

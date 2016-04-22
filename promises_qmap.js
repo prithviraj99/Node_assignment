@@ -33,7 +33,7 @@ Q.map(URLs, function(url) {
                 for (var i = 0; i < results.length; i++) {
                 // process results[i] here
                 // writing them to output.csv file
-                fs.writeFile('output2.csv', results[i], function(err){
+                fs.appendFile('output2.csv', results[i], function(err){
                   if(err){
                     console.log(err);
                   }
